@@ -10,8 +10,7 @@ const users = ref(["1", "2"]);
   <div id="app" class="ui container">
     <h1>GitHub Profiles</h1>
     <div class="ui cards">
-      <github-user-card v-for="user in users" :username="user">
-      </github-user-card>
+      <GithubUserCard v-for="user in users" :username="user" />
     </div>
   </div>
 </template>
